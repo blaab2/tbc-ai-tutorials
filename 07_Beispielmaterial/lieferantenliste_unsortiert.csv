@@ -1,0 +1,28 @@
+Lieferant;Ansprechpartner;Ort;Telefon;E-Mail;Warengruppe;Letzte Bestellung;Jahresumsatz EUR;Bewertung
+Müller Stahlhandel GmbH;Herr K. Brandt;Beispielstadt;0000 111201;brandt@stahl-mueller.example.com;Stahl;12.03.2024;48.500,00;A
+Schmidt & Söhne KG;Frau Lea Schmidt;musterhausen;0000 222301;l.schmidt@schmidt-soehne.example.com;Schrauben/Normteile;2024-02-28;12.300;B
+Elektro Krause;Herr Krause;Neustadt a. d. Probe;0000 333401;info@elektro-krause.example.com;Elektrokomponenten;5.1.24;31 200 €;A
+Weber Kunststofftechnik;Frau Dr. Weber;Fiktivhausen;0000 444501;weber@weber-kunststoff.example.com;Kunststoffteile;März 2024;22.750,50;B
+Lackierwerk Ost GmbH;;Beispielstadt-Ost;0000 555601;kontakt@lackierwerk-ost.example.com;Oberflächen;14.11.2023;9800;C
+Hoffmann Logistik;Herr Tim Hoffmann;MUSTERHAUSEN;0000 666701;;Spedition;01.04.2024;18.400,00 €;A
+Mueller Stahlhandel;K. Brandt;Beispielstadt;0000-111201;brandt@stahl-mueller.example.com;Stahl;2024-03-12;48500;A
+Bauer Präzisionsteile;Herr S. Bauer;Probeheim;0000 777801;s.bauer@bauer-praezision.example.com;Drehteile;20.02.2024;27.100,00;
+Zimmermann Verpackung;Frau Nina Zimmermann;Musterhausen;0000 888901;n.zimmermann@zv-verpackung.example.com;Verpackung;15/01/2024;6.250;B
+Schmidt und Söhne KG;Lea Schmidt;Musterhausen;0000 222301;l.schmidt@schmidt-soehne.example.com;Normteile;28.02.2024;12300,00;B
+Fischer Kabelkonfektion;Herr Jan Fischer;Neustadt a.d. Probe;0000 999001;fischer@kabel-fischer.example.com;Elektrokomponenten;03.03.2024;14.900;A
+Becker Werkzeugbau;Frau Becker;fiktivhausen;;info@becker-werkzeug.example.com;Werkzeuge;Dez. 2023;41.000 EUR;B
+Schulz Industriebedarf;Herr Schulz;Beispielstadt;0000 121314;schulz@schulz-ib.example.com;Verbrauchsmaterial;2024-04-08;3.150,75;C
+ELEKTRO KRAUSE GmbH;Hr. Krause;Neustadt an der Probe;0000 333401;info@elektro-krause.example.com;Elektro;05.01.2024;31.200,00;A
+Wagner Hydraulik;Frau Eva Wagner;Probeheim;0000 141516;e.wagner@wagner-hydraulik.example.com;Hydraulik;22.01.2024;19.800;B
+Keller Dichtungstechnik;Herr Keller;Musterhausen;0000 161718;keller@dichtung-keller.example.com;Dichtungen;;7.400;
+Richter Glas & Optik;Frau Richter;Beispielstadt;0000 181920;richter@richter-optik.example.com;Optik;09.02.2024;n/a;B
+Weber Kunststoff-Technik GmbH;Dr. Weber;Fiktivhausen;0000 444501;weber@weber-kunststoff.example.com;Kunststoff;2024-03-01;22750,5;B
+Neumann Sensorik;Herr Paul Neumann;neustadt a. d. probe;0000 202122;p.neumann@neumann-sensorik.example.com;Sensoren;18.03.2024;55.600,00;A
+Schwarz Gießerei;;Gießdorf;0000 222324;info@giesserei-schwarz.example.com;Gussteile;30.10.2023;63.200 €;C
+Lange Büroservice;Frau Lange;Beispielstadt;0000 242526;lange@buero-lange.example.com;Büromaterial;7.4.2024;1.200;A
+Hartmann Motoren;Herr Hartmann;Probeheim;0000 262728;hartmann@hartmann-motoren.example.com;Antriebe;2024-01-30;37.450,00;B
+Krüger Gummiwaren;Frau Krüger;Gummidorf;0000 282930;;Dichtungen;12.12.2023;4.800;C
+Wolf Messtechnik;Herr Dr. Wolf;Musterhausen;0000 303132;wolf@wolf-messtechnik.example.com;Messtechnik;April 2024;16.000,00;a
+Braun Transporte;Herr Braun;Beispielstadt;0000 323334;braun@braun-transporte.example.com;Spedition;03/02/2024;11.300 EUR;B
+Koch Elektronik;Frau Koch;Neustadt a. d. Probe;0000 343536;koch@koch-elektronik.example.com;Elektronik;2024-02-14;;B
+Schäfer Schweißtechnik;Herr Schäfer;Fiktivhausen;0000 363738;schaefer@schaefer-schweiss.example.com;Schweißzubehör;19.03.2024;8.900;b
