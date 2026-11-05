@@ -69,7 +69,7 @@ Starte einen **neuen Chat** und gib nur das ein:
 Schreib einen Einarbeitungsplan.
 ```
 
-Schau dir das Ergebnis an. (Ja, die Willkommensnachricht fehlt – die KI weiß ja nichts davon.) Speichere es kurz (z. B. in einem Textdokument) oder lass den Chat offen.
+Schau dir das Ergebnis an. Achte besonders darauf: Geht es ums Lager? Um die erste Woche? (Ja, die Willkommensnachricht fehlt – die KI weiß ja nichts davon.) Speichere es kurz (z. B. in einem Textdokument) oder lass den Chat offen.
 
 ### Aufgabe B – Derselbe Auftrag mit dem Baukasten
 
@@ -104,7 +104,7 @@ Zugänge testen | [NAME TEAMLEITUNG]
 | Passt das Ergebnis zur Situation (Lager, kleiner Betrieb)? | | |
 | Ist das Format direkt brauchbar? | | |
 | Wie viel müsstest du noch nacharbeiten? | | |
-| Hat die KI etwas erfunden oder vermutet? | | |
+| Hat die KI etwas erfunden oder vermutet? (z. B. Dauer, Abteilung, Büro statt Lager) | | |
 
 > **Typische Beobachtung:** Beim Minimal-Prompt rät der KI-Assistent – oft kommt etwas Allgemeines für ein Büro oder ein großes Unternehmen heraus. Das ist kein „Fehler“ der KI: Ihr fehlten einfach die Informationen.
 
@@ -151,6 +151,8 @@ Was fehlt in diesem Plan noch? Nenne mir 3 Punkte, die erfahrene
 Teamleitungen oft vergessen.
 ```
 
+**Beobachte:** Prüfe nach jeder Rückmeldung zwei Dinge: Wurde deine Änderung umgesetzt? Und hat die KI nebenbei etwas gestrichen oder dazugedichtet, um das du nicht gebeten hast (z. B. eine Ansprechperson, einen Treffpunkt, eine Uhrzeit)?
+
 > **Merke:** Du musst nicht beim ersten Versuch den perfekten Prompt schreiben. Ein Gespräch mit zwei, drei Rückmeldungen ist ganz normal – und oft schneller als ein riesiger Prompt.
 
 ### Aufgabe E – Dein eigener wiederverwendbarer Prompt
@@ -174,8 +176,8 @@ Wichtig ist uns: [z. B. kurz, sachlich, wir duzen uns intern].
 
 Aufgabe: Erstelle aus den Stichpunkten unten einen [ART DES TEXTES].
 
-Format: [z. B. höchstens 150 Wörter / 3 Abschnitte mit Zwischenüberschrift /
-Tabelle mit Spalten ...].
+Format: [z. B. insgesamt höchstens 150 Wörter, 3 Abschnitte mit
+Zwischenüberschrift – oder: Tabelle mit den Spalten ...].
 
 Beispiel für den Stil: [OPTIONAL: EIN KURZER, UNBEDENKLICHER BEISPIELSATZ].
 
@@ -188,10 +190,10 @@ Stichpunkte:
 **Daten-Ampel-Check vor dem Test:**
 
 - [ ] Keine echten Namen von Kunden oder Mitarbeitenden (Platzhalter verwenden)
-- [ ] Keine Preise, Vertragsinhalte, Konstruktions- oder Personaldaten
+- [ ] Keine Preise, Vertragsinhalte, Konstruktions- oder Personaldaten (zum Testen höchstens erfundene oder grob gerundete Beträge)
 - [ ] Im Zweifel mit erfundenen Beispieldaten testen
 
-Teste deinen Prompt einmal mit Beispielinhalten. Wenn das Ergebnis passt: **Speichere den Prompt** – z. B. in einer Textdatei, in deinen Notizen oder unten auf diesem Blatt. Dann musst du ihn nächstes Mal nur noch kopieren.
+Teste deinen Prompt einmal mit Beispielinhalten. Prüfe, ob dein Format eingehalten ist (Wörter, Abschnitte), und beantworte Rückfragen der KI nur mit Daten, die die Daten-Ampel erlaubt. Die KI kennt unsere Ampel nicht – das prüfst du selbst vor dem Einfügen. Wenn das Ergebnis passt: **Speichere den Prompt** – z. B. in einer Textdatei, in deinen Notizen oder unten auf diesem Blatt. Dann musst du ihn nächstes Mal nur noch kopieren.
 
 ---
 
@@ -212,7 +214,7 @@ Prüfe: Sind die Vorschläge wirklich besser – oder nur länger?
 
 ### Aufgabe G – Baukasten an einem anderen Beispiel
 
-Öffne [notizen_besprechung.txt](../07_Beispielmaterial/notizen_besprechung.txt) und vergleiche wieder zwei Prompts:
+Öffne [notizen_besprechung.txt](../07_Beispielmaterial/notizen_besprechung.txt) und vergleiche wieder zwei Prompts – jeden in einem neuen Chat:
 
 ```text
 Fass das zusammen.
@@ -231,7 +233,7 @@ erfinde nichts.
 [HIER DIE NOTIZEN EINFÜGEN]
 ```
 
-Welche Aufgaben oder Termine findet nur der zweite Prompt? Hat die KI irgendwo etwas ergänzt, das gar nicht in den Notizen steht? Und: Hat sie den **Nachtrag** am Ende der Notizen berücksichtigt?
+Was ist beim zweiten Ergebnis anders – Länge, Aufbau, „offen“-Markierungen? Fehlt beim ersten etwas? Hat die KI irgendwo etwas ergänzt, das gar nicht in den Notizen steht? Und: Hat sie den **Nachtrag** am Ende der Notizen berücksichtigt? Hat sie sich an die 5 Sätze gehalten? Steht die erledigte Kaffeemaschine als Aufgabe drin?
 
 ---
 

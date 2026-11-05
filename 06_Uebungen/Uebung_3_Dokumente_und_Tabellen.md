@@ -47,6 +47,8 @@ Hier ist das Dokument, um das es geht:
 Bitte lies es vollständig und bestätige kurz, dass du es hast. Warte dann auf meine Frage.
 ```
 
+4. Prüfe, ob alles angekommen ist: Frag „Wie lauten die letzten zwei Zeilen des Dokuments, wörtlich?“ und vergleiche die Antwort mit dem Ende der Datei (im Editor Strg + Ende).
+
 ---
 
 ## So läuft die Übung
@@ -124,9 +126,11 @@ Nimm dir **drei Aussagen** aus der Zusammenfassung oder der Risikotabelle und su
 
 ### Für Schnelle
 
-- Lass dir den Bericht für eine **andere Zielgruppe** zusammenfassen, z. B. für das Montageteam in einfacher Sprache oder für einen Kunden (ohne interne Details).
+- **Modellvergleich:** Stell dieselbe Basis-Aufgabe noch einmal in einem **neuen Chat** – diesmal mit einem anderen Modell (z. B. [STARKES MODELL] statt [SCHNELLES MODELL] oder mit [DENK-MODUS]). Vergleiche: Was ist länger, was vollständiger? Hält sich das Modell an „genau 5 Sätze“? Findet eines von beiden den Fehler in der Messwerttabelle von selbst? Hinweise: [Modellauswahl](../05b_Modellauswahl.md)
+
+- Lass dir den Bericht für eine **andere Zielgruppe** zusammenfassen, z. B. für die Bediener und die Instandhaltung in Halle 3 in einfacher Sprache (Was ändert sich im Arbeitsalltag?) oder für einen Kunden (ohne interne Details). Prüfe danach: Welche Aussage klingt sicherer als im Original? Würdest du den Kundentext so verschicken?
 - Frag: „Welche drei Fragen sollte die Geschäftsführung den Autoren des Berichts stellen?“
-- Frag nach etwas, das **nicht** im Bericht steht, z. B. „Wie viel Euro behalten wir als Einbehalt zurück?“ (Tipp: Such im Bericht nach dem Kaufpreis.) Gibt der KI-Assistent zu, dass er es nicht weiß – oder erfindet er etwas?
+- Frag nach etwas, das **nicht** im Bericht steht, z. B. „Wie viel Euro behalten wir als Einbehalt zurück?“ (Tipp: Such im Bericht nach dem Kaufpreis.) Gibt der KI-Assistent zu, dass er es nicht weiß – oder erfindet er etwas? Beides ist lehrreich: Gibt er es zu, prüf trotzdem nach. Nennt er eine Zahl, such, woher sie kommt.
 
 ---
 
@@ -170,7 +174,8 @@ Wurden wirklich **alle** Änderungen gefunden? So prüfst du (ca. 5–8 Minuten 
 1. Lege beide Fassungen nebeneinander (zwei Fenster) und gehe Abschnitt für Abschnitt durch.
 2. Achte besonders auf **Zahlen** (Beträge, Kilometer, Tage, Fristen) – hier verstecken sich Änderungen gern.
 3. Hake jede Änderung in der Tabelle ab, die du im Original wiederfindest.
-4. Notiere, was der KI-Assistent übersehen oder falsch dargestellt hat.
+4. Notiere, was der KI-Assistent übersehen oder falsch dargestellt hat. Stimmt die genannte Anzahl mit den Zeilen der Tabelle überein? Ist eine Deutung als Tatsache formuliert?
+5. Lies die Info-Mail Satz für Satz gegen die neue Fassung: Steht jede Aussage genau so in v2?
 
 Am Ende verrät der Trainer, wie viele Änderungen es tatsächlich gibt. Wie nah warst du dran?
 
@@ -180,7 +185,7 @@ Am Ende verrät der Trainer, wie viele Änderungen es tatsächlich gibt. Wie nah
 
 ### Für Schnelle
 
-- Lass dir eine **FAQ** mit den fünf Fragen erstellen, die Mitarbeitende zur neuen Fassung wahrscheinlich stellen – mit Antworten, die sich nur auf v2 stützen.
+- Lass dir eine **FAQ** mit den fünf Fragen erstellen, die Mitarbeitende zur neuen Fassung wahrscheinlich stellen – mit Antworten, die sich nur auf v2 stützen. Tipp: Lass zu jeder Antwort den Abschnitt angeben, und prüfe, ob die Frage nach dem Trinkgeld dabei ist.
 - Frag: „Gibt es in v2 Formulierungen, die unklar sind oder unterschiedlich verstanden werden können?“
 - Spiel einen Fall durch – und rechne danach selbst nach:
 
@@ -192,7 +197,13 @@ Rechne Schritt für Schritt und nenne zu jeder Zahl den Abschnitt der Richtlinie
 Nutze nur Angaben aus den beiden Fassungen.
 ```
 
-Frag danach auch nach der Verpflegung. Steht dazu ein Betrag in den Richtlinien – oder bringt der KI-Assistent Zahlen von woanders mit?
+Frag danach auch nach der Verpflegung:
+
+```
+Und was bekomme ich für die Verpflegung erstattet?
+```
+
+Steht dazu ein Betrag in den Richtlinien – oder bringt der KI-Assistent Zahlen von woanders mit? Probier danach: „Nenne nur Beträge, die wörtlich in einer der beiden Fassungen stehen.“ Vergleiche beide Antworten.
 
 ---
 
@@ -236,16 +247,18 @@ Bitte am Ende darum, fehlende Verantwortliche bis Freitag zu ergänzen.
 
 Gehe die Notizen Zeile für Zeile durch:
 
+- [ ] Protokoll (Basis): Steht der Liefertermin aus dem NACHTRAG drin? Ist der Rabatt eine offene Frage und keine Entscheidung? Sind Notizzeilen mit Fragezeichen als [UNKLAR] markiert und nicht zur Tatsache geworden?
 - [ ] Ist jede Aufgabe aus den Notizen in der Tabelle? (Achtung: Manche Aufgaben verstecken sich in Nebensätzen.)
 - [ ] Stimmen die Namen bei „Wer“? Hat der KI-Assistent jemandem eine Aufgabe zugeschoben, die so nicht in den Notizen steht?
 - [ ] Stimmen die Termine? Wurden Angaben wie „nächste Woche“ oder „bis Ende des Monats“ in ein konkretes Datum umgerechnet – und wenn ja, stimmt das?
 - [ ] Gibt es Einträge, die frei erfunden sind?
+- [ ] Stimmt die Tabelle in der Mail noch mit der Tabelle davor überein (Namen, Termine, nichts weggefallen)?
 
 ### Für Schnelle
 
-- Lass dir die Aufgaben als **Checkliste** zum Abhaken ausgeben.
+- Lass dir die Aufgaben als **Checkliste** zum Abhaken ausgeben (z. B. mit ☐, nach Person sortiert). Tipp: Schreib dazu, dass fehlende Personen oder Termine als „offen“ erscheinen sollen und Erledigtes nicht hineingehört.
 - Frag: „Welche Punkte aus der Besprechung haben noch keinen Verantwortlichen? Formuliere zu jedem eine kurze Rückfrage.“
-- Lass dir eine Tagesordnung für die **nächste** Besprechung vorschlagen, basierend auf den offenen Punkten.
+- Lass dir eine Tagesordnung für die **nächste** Besprechung vorschlagen, basierend auf den offenen Punkten. Prüfe: Hat der KI-Assistent ein Datum ausgerechnet? Ist die Kaffeemaschine drin?
 
 ---
 
@@ -288,17 +301,19 @@ Gib mir die bereinigte Liste noch einmal als CSV mit Semikolon als Trennzeichen,
 
 ### Prüfschritt (Pflicht!)
 
-- [ ] **Zeilen zählen:** Stimmt die Anzahl „vorher“ mit der Originaldatei überein? (Im Texteditor mit Strg + Ende ans Dateiende springen – unten in der Statusleiste steht die Zeilennummer. Die Kopfzeile mit den Spaltennamen nicht mitzählen.)
+- [ ] **Zeilen zählen:** Stimmt die Anzahl „vorher“ mit der Originaldatei überein? (Im Texteditor mit Strg + Ende ans Dateiende springen – unten in der Statusleiste steht die Zeilennummer. Die Kopfzeile mit den Spaltennamen nicht mitzählen. Steht der Cursor danach in einer leeren letzten Zeile, zählt auch diese nicht mit. Also: Nummer der letzten Zeile mit Text minus 1. Frag den KI-Assistenten außerdem, ob er Zeilennummern mit oder ohne Kopfzeile angibt.)
 - [ ] **Rechnung prüfen:** Zeilen vorher – zusammengeführte Dubletten = Zeilen nachher?
 - [ ] **Stichprobe:** Nimm dir drei Lieferanten und vergleiche jede Angabe (Name, Datum, Kontakt, Werte) mit dem Original.
 - [ ] **Erfundenes?** Steht irgendwo ein Wert, der im Original fehlte (z. B. eine ausgedachte Telefonnummer oder ein Datum)?
 - [ ] **Dubletten:** Sind die zusammengeführten Einträge wirklich dieselbe Firma?
+- [ ] **CSV = Tabelle?** Hat die CSV genauso viele Zeilen wie die Tabelle, und stehen dieselben Hinweise drin?
 
 ### Für Schnelle
 
-- Frag: „Welche Spalten fehlen in dieser Liste, die man für eine ordentliche Lieferantenverwaltung bräuchte?“
+- Frag: „Welche Spalten fehlen in dieser Liste, die man für eine ordentliche Lieferantenverwaltung bräuchte? Nenne die 5 wichtigsten mit je einem Satz Begründung.“
+- Lass dir die Summe der Jahresumsätze nach Entfernen der Dubletten bilden – mit allen Einzelwerten als Tabelle – und rechne sie in Excel mit =SUMME nach. Stimmt sie?
 - Lass dir eine kurze **Anleitung** schreiben, wie die Liste künftig einheitlich gepflegt werden soll (Regeln für Schreibweisen, Datumsformat, Pflichtfelder).
-- Lass dir erklären, wie du die Bereinigung **selbst in Excel** machen würdest (z. B. Duplikate entfernen, Text in Spalten). Oft ist das bei großen Tabellen der verlässlichere Weg – der KI-Assistent hilft dir dabei mit der Anleitung.
+- Lass dir erklären, wie du die Bereinigung **selbst in Excel** machen würdest (z. B. Duplikate entfernen, Text in Spalten). Oft ist das bei großen Tabellen der verlässlichere Weg – der KI-Assistent hilft dir dabei mit der Anleitung. Probier die Anleitung in Excel aus: Wie viele Zeilen entfernt „Duplikate entfernen“? Richtig wären 4 (27 → 23).
 
 ---
 

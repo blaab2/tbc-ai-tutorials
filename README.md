@@ -64,6 +64,8 @@ Details: [Trainer-Leitfaden, Abschnitt 4](01_Trainer-Leitfaden.md#4-variante-2--
 | [04_Folien.md](04_Folien.md) | Folieninhalte für 26 Folien (+ Anhang A „Backup-Plan“, Anhang B „Wiederholung Termin 2“) mit Bildideen und Sprechernotizen – zum Übertragen in PowerPoint, Google Slides o. Ä. |
 | [06_Uebungen/Trainer-Loesungshinweise.md](06_Uebungen/Trainer-Loesungshinweise.md) | Lösungsschlüssel: Musterprompts, Merkmale guter Ergebnisse, Stolpersteine, Hilfen für Langsame und Schnelle – inkl. vollständiger Liste der 7 Unterschiede der Reisekostenrichtlinie, aller Datenprobleme der CSV, der 8 Aufgaben in den Notizen und der versteckten Risiken im Prüfbericht. **Nicht austeilen.** |
 | [07_Beispielmaterial/demo_fehler_zeigen.md](07_Beispielmaterial/demo_fehler_zeigen.md) | 7 Demos für Block 1/2: erfundene Quellen, aktuelle Ereignisse, Firmenwissen, Rechnen/Zählen, falsche Voraussetzung, schwankende Antworten, Wow-Demo. **Vorher testen, Screenshots als Backup.** |
+| [06_Uebungen/Erwartete_Ergebnisse.md](06_Uebungen/Erwartete_Ergebnisse.md) | Was die KI bei jeder Übung und Demo im Testlauf (3 Modelle) tatsächlich geliefert hat: Ampel-Übersicht, typische Fehler und wie du sie in der Auswertung nutzt, Unterschiede zwischen einfacheren und stärkeren Modellen, Tipps fürs Herumgehen, offene Empfehlungen. **Nicht austeilen.** |
+| [09_Testlaeufe/README.md](09_Testlaeufe/README.md) | Index aller 68 Testlauf-Protokolle mit Bewertung und vollständigen Gesprächsverläufen |
 
 ### Vor dem Termin verschicken bzw. abstimmen
 
@@ -76,7 +78,8 @@ Details: [Trainer-Leitfaden, Abschnitt 4](01_Trainer-Leitfaden.md#4-variante-2--
 
 | Datei | Zweck |
 |---|---|
-| [05_Spickzettel.md](05_Spickzettel.md) | Eine Seite zum Ausdrucken: Prompt-Baukasten, 10 Prompt-Vorlagen, Sätze zum Nachsteuern, Daten-Ampel kurz, 3 Warnzeichen, Kontakte |
+| [05_Spickzettel.md](05_Spickzettel.md) | Eine Seite zum Ausdrucken: Prompt-Baukasten, 10 Prompt-Vorlagen, Sätze zum Nachsteuern, Modellwahl kurz, Daten-Ampel kurz, 3 Warnzeichen, Kontakte |
+| [05b_Modellauswahl.md](05b_Modellauswahl.md) | Welches Modell für welche Aufgabe? Drei Stufen (schnell / stark / Nachdenken), Faustregel, Entscheidungstabelle, Belege aus den Testläufen, Tabelle mit euren Modellnamen zum Ausfüllen |
 | [06_Uebungen/Uebung_1_Texte_schreiben.md](06_Uebungen/Uebung_1_Texte_schreiben.md) | Übung 1 (Block 3): Antwort auf Kundenbeschwerde, Ton ändern, übersetzen, eigene Mail – Aufgaben A–G |
 | [06_Uebungen/Uebung_2_Gute_Prompts.md](06_Uebungen/Uebung_2_Gute_Prompts.md) | Übung 2 (Block 4): Minimal- vs. Baukasten-Prompt, Rückfragen, nachschärfen, eigener wiederverwendbarer Prompt – Aufgaben A–G |
 | [06_Uebungen/Uebung_3_Dokumente_und_Tabellen.md](06_Uebungen/Uebung_3_Dokumente_und_Tabellen.md) | Übung 3 (Block 5): Stationen A Prüfbericht · B Richtlinienvergleich · C Notizen → Protokoll/Checkliste · D Tabelle bereinigen, je mit Pflicht-Prüfschritt |
@@ -133,7 +136,7 @@ Die ausführliche Zeitleiste steht im [Trainer-Leitfaden, Abschnitt 2](01_Traine
 **1 Woche vorher**
 
 - [ ] **Umfrage auswerten:** Aufgaben gruppieren, Zweierteams bilden (Unsichere mit Neugierigen).
-- [ ] **Alle Übungen und Demos selbst durchspielen** – mit dem echten [KI-TOOL]. Screenshots als Backup für die Fehler-Demos machen. Abgleich mit den [Trainer-Lösungshinweisen](06_Uebungen/Trainer-Loesungshinweise.md).
+- [ ] **Alle Übungen und Demos selbst durchspielen** – mit dem echten [KI-TOOL]. Screenshots als Backup für die Fehler-Demos machen. Abgleich mit den [Trainer-Lösungshinweisen](06_Uebungen/Trainer-Loesungshinweise.md) und den [erwarteten Ergebnissen](06_Uebungen/Erwartete_Ergebnisse.md) aus unseren Testläufen.
 - [ ] **Beispielmaterial bereitstellen:** Ordner [07_Beispielmaterial](07_Beispielmaterial/) an einem Ort ablegen, den alle erreichen ([LINK ZU DEN MATERIALIEN]), plus USB-Stick als Backup.
 - [ ] **Drucken** (Druckliste unten).
 
@@ -159,6 +162,8 @@ Alle Platzhalter stehen in eckigen Großbuchstaben. Ersetze sie vor dem Einsatz.
 | `[KI-TOOL]` | Name eures KI-Assistenten laut Firmenlizenz | fast allen Dateien |
 | `[LINK ZUM TOOL]` | Adresse, unter der man sich mit dem Firmenzugang anmeldet | 02, 04, 05, Übungen, 08 |
 | `[FIRMENNAME]` | Name eures Unternehmens (nicht der fiktiven Nordlicht Technik GmbH!) | 01, 02, 03, 04, 05, demo_fehler_zeigen |
+| `[SCHNELLES MODELL]` · `[STARKES MODELL]` · `[DENK-MODUS]` | Namen der Modelle bzw. des Denkmodus in eurem Tool | 04, 05, 05b, Übung 3 |
+| `[WO IM MENÜ]` · `[JA/NEIN]` · `[REGEL ZU NUTZUNGSGRENZEN]` | Wo man das Modell umschaltet, ob es freigegeben ist, ob es Nutzungsgrenzen gibt | 05b |
 | `[ANSPRECHPARTNER IT]` | Name/Team für Zugänge und Technik | fast allen Dateien |
 | `[KONTAKT IT]` | Telefon/Mail/Ticket-Weg der IT | 02, 03 |
 | `[DATENSCHUTZBEAUFTRAGTE/R]` | Name der/des Datenschutzbeauftragten | fast allen Dateien |
@@ -197,6 +202,7 @@ Annahme: *N* = Zahl der Teilnehmenden. Reserve: +3 je Teilnehmenden-Dokument.
 |---|---|---|---|
 | Daten-Ampel (abgestimmte Fassung) | [03_Daten-Ampel.md](03_Daten-Ampel.md) | N + 3 | gern farbig; zusätzlich 1 × als Plakat A3 für die Wand |
 | Spickzettel | [05_Spickzettel.md](05_Spickzettel.md) | N + 3 | eine A4-Seite, gern farbig; am Ende von Folie 9 austeilen |
+| Modellauswahl | [05b_Modellauswahl.md](05b_Modellauswahl.md) | N + 3 | optional, 2 Seiten; Tabelle in Abschnitt 1 vorher ausfüllen |
 | Übungsblatt 1 | [Uebung_1_Texte_schreiben.md](06_Uebungen/Uebung_1_Texte_schreiben.md) | N + 3 | alternativ 1 pro Team, wenn Papier gespart werden soll |
 | Übungsblatt 2 | [Uebung_2_Gute_Prompts.md](06_Uebungen/Uebung_2_Gute_Prompts.md) | N + 3 | |
 | Übungsblatt 3 | [Uebung_3_Dokumente_und_Tabellen.md](06_Uebungen/Uebung_3_Dokumente_und_Tabellen.md) | N + 3 | |

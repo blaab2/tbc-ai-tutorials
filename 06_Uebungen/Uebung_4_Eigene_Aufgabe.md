@@ -64,7 +64,7 @@ Meine Aufgabe:
 
 &nbsp;
 
-> **Keine Aufgabe dabei?** Kein Problem – schau in die [Ideenliste nach Rollen](#ideenliste-nach-rollen) weiter unten und such dir etwas aus.
+> **Keine Aufgabe dabei?** Kein Problem – schau in die [Ideenliste nach Rollen](#ideenliste-nach-rollen) weiter unten und such dir etwas aus. Oder frag den KI-Assistenten: „Ich arbeite als [TÄTIGKEIT] in einem Unternehmen der Branche [BRANCHE]. Welche meiner typischen Aufgaben könntest du mir erleichtern? Gib mir 10 Ideen, die ohne vertrauliche Daten funktionieren.“ Lies nur die Überschriften und such dir eine Idee aus. Prüf bei deiner Idee trotzdem selbst die Daten-Ampel.
 
 ### Schritt 2: Daten-Ampel prüfen
 
@@ -133,7 +133,7 @@ Der Ton ist zu förmlich. Schreib lockerer, aber trotzdem professionell.
 ```
 
 ```
-Punkt 3 stimmt so nicht. Richtig ist: [...]. Bitte überarbeite den Text entsprechend.
+Punkt 3 (bzw. der Satz mit „…“) stimmt so nicht. Richtig ist: [...]. Bitte überarbeite den Text entsprechend.
 ```
 
 ```
@@ -143,6 +143,8 @@ Gib mir drei unterschiedliche Varianten, damit ich auswählen kann.
 ```
 Was müsste ich dir noch sagen, damit das Ergebnis besser wird?
 ```
+
+**Prüf nach jeder Runde:** Hat der KI-Assistent wirklich gekürzt bzw. geändert – und ist alles Wichtige noch drin? Wortzahlen, die er selbst angibt, stimmen oft nicht; zähl lieber selbst nach.
 
 **Wenn es gar nicht klappt:** Neuen Chat öffnen und den Prompt mit mehr Kontext neu starten. Manchmal ist das schneller, als im alten Chat zu korrigieren.
 
@@ -181,6 +183,7 @@ Keine eigene Aufgabe zur Hand, oder willst du noch eine zweite probieren? Hier s
 - Produktbeschreibung für unterschiedliche Kundengruppen umformulieren (Techniker vs. Einkäufer)
 - Antworten auf häufige Kundenfragen (FAQ) vorbereiten
 - Einwände sammeln und Antworten darauf üben lassen („Spiel einen skeptischen Kunden“)
+- **Achtung:** Produkteigenschaften (z. B. Schutzart), Lieferzeiten und Gesprächsinhalte im Entwurf selbst prüfen – die KI ergänzt gern Details, die nie besprochen wurden.
 
 ### Einkauf
 - Anfrage an mehrere Lieferanten formulieren (DE und EN)

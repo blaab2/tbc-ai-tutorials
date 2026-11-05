@@ -10,7 +10,7 @@ Dieses Dokument enthält alle Folien für das ca. 3-stündige Tutorial – Folie
 
 1. **Eine Überschrift „## Folie N – …“ = eine Folie.** Der Titel nach dem Gedankenstrich wird der Folientitel.
 2. **Der Folieninhalt** (Stichpunkte) kommt auf die Folie. Bleib bei höchstens fünf Stichpunkten und großer Schrift (mind. 24 pt) – die Leute sollen zuhören und mitmachen, nicht lesen.
-3. **Bildvorschläge** stehen in *(Klammern, kursiv)*. Nimm eigene Fotos, Symbole aus der Firmenvorlage oder lizenzfreie Bilder. Die Klammertexte selbst kommen nicht auf die Folie.
+3. **Bildvorschläge** stehen in *(Klammern, kursiv)*. Die HTML-Präsentation enthält dazu fertige, animierte Grafiken. Nach `./build.sh` liegen sie als SVG-Dateien unter `html/assets/folien/` und lassen sich in PowerPoint oder Google Präsentationen einfügen (dort ohne Animation). Du kannst auch eigene Fotos, Symbole aus der Firmenvorlage oder lizenzfreie Bilder nehmen. Die Klammertexte selbst kommen nicht auf die Folie.
 4. **Die Sprechernotiz** kopierst du in das Notizfeld unter der Folie (in PowerPoint: „Notizen“, in Google Präsentationen: „Vortragsnotizen“). Dann siehst du sie in der Referentenansicht.
 5. **Blockwechsel** sind mit einer Zeile wie `⏱ BLOCK 3 · 0:30–1:00` markiert. Am besten setzt du dort eine Abschnittsfolie oder zumindest eine kleine Zeitangabe in die Fußzeile – das hilft dir, im Plan zu bleiben.
 6. **Platzhalter** in eckigen Großbuchstaben (z. B. [KI-TOOL], [LINK ZUM TOOL]) ersetzt du vorher durch die echten Angaben.
@@ -110,8 +110,36 @@ Optional, ein Satz: „Übrigens verlangt die europäische KI-Verordnung (EU AI 
 „Kennt ihr die Wortvorschläge auf dem Handy? Ihr tippt ‚Ich komme heute etwas …‘ und das Handy schlägt ‚später‘ vor. Ein Sprachmodell – so nennt man die Technik hinter dem KI-Assistenten – funktioniert im Kern ähnlich: Es sagt vorher, welches Textstück als Nächstes am wahrscheinlichsten passt. Nur hat es dafür aus unvorstellbar vielen Texten gelernt, und es berücksichtigt den ganzen bisherigen Zusammenhang – eure Frage, die bisherige Unterhaltung, hochgeladene Dokumente.“
 „Danach wurde es zusätzlich darauf trainiert, hilfreich auf Anweisungen zu antworten. Deshalb kann es nicht nur Sätze vervollständigen, sondern Mails schreiben, Texte zusammenfassen, übersetzen oder Tabellen aufräumen.“
 „Wichtig: Es schlägt nicht in einer Datenbank nach, ob etwas stimmt. Es erzeugt Text, der *plausibel* klingt. Meistens ist plausibel auch richtig – aber nicht immer. Und: Es kennt unsere Firma nicht. Es weiß nichts über unsere Kunden, Produkte oder Abläufe – außer ihr schreibt es ihm hinein.“
-Falls jemand fragt, ob das Tool im Internet sucht: „Manche Tools können zusätzlich im Internet suchen oder Dateien lesen. Dann arbeitet die KI mit diesen Inhalten – aber das Grundprinzip bleibt dasselbe, und auch dann kann sie danebenliegen.“
+Falls jemand fragt, ob das Tool im Internet sucht: „Manche Tools können zusätzlich im Internet suchen oder Dateien lesen. Dann arbeitet die KI mit diesen Inhalten – aber das Grundprinzip bleibt dasselbe, und auch dann kann sie danebenliegen. Wer das macht, Modell oder Tool, zeige ich auf der nächsten Folie.“
 Nicht in technische Details abschweifen. Wenn die Analogie sitzt, reicht das völlig.
+
+---
+
+## Folie 4b – Motor und Auto: Modell vs. Werkzeug
+
+**Das Modell ist der Motor – das Tool ist das Auto**
+
+- **Motor = Sprachmodell:** erzeugt Text – sonst nichts
+- **Auto = [KI-TOOL]:** Chatfenster, Datei-Upload, Websuche, Rechnen, Firmen-Einstellungen
+- **Der Motor hat kein Gedächtnis:** Jede Nachricht beginnt für ihn bei null
+- Das Tool schickt bei jeder Nachricht **den ganzen Chat** noch einmal mit
+- **Neuer Chat = leeres Blatt** – wichtigen Kontext neu mitgeben
+
+*(Grafik: Links ein Auto im Querschnitt. In der Mitte der Motor, beschriftet „Sprachmodell“. Drumherum beschriftete Teile des Autos: Lenkrad = Eingabefeld, Kofferraum = hochgeladene Dateien, Navi = Websuche, Handschuhfach = Rechner/Werkzeuge. Rechts ein kleiner Ablauf in drei Schritten: Bei jeder neuen Nachricht wandert der komplette Stapel aus Fragen und Antworten in den Motor – und der Stapel wird jedes Mal etwas dicker.)*
+
+**Sprechernotiz:**
+„Wenn wir ‚die KI‘ sagen, meinen wir eigentlich zwei Dinge. Das kann man sich vorstellen wie bei einem Auto.“
+„Der **Motor** ist das Sprachmodell von eben: Es bekommt Text und erzeugt Text. Mehr nicht. Es kann von sich aus nicht im Internet nachschauen, keine Dateien öffnen und nichts abspeichern.“
+„Das **Auto** drumherum ist das Programm, das ihr gleich im Browser öffnet: [KI-TOOL]. Das Auto baut das Chatfenster, nimmt eure Dateien entgegen, sucht – falls eingeschaltet – im Internet, benutzt einen Taschenrechner und hält sich an die Einstellungen unserer Firmenlizenz. Das Ergebnis reicht es dann an den Motor weiter.“
+„Derselbe Motor kann in ganz verschiedenen Autos stecken: in einem Chatprogramm im Browser, in Copilot in Word und Outlook oder in Werkzeugen für Programmierer wie Claude Code oder GitHub Copilot. Die lesen dann sogar selbst Dateien und führen Befehle aus. Deshalb kann sich dasselbe Modell in zwei Tools ganz unterschiedlich anfühlen. Und wenn ihr gleich im Tool ein anderes Modell auswählt, tauscht ihr den Motor – das Auto bleibt dasselbe.“
+**Kernpunkt – zustandslos:** „Jetzt kommt das Überraschende: Der Motor hat **kein Gedächtnis**. Zwischen zwei Nachrichten merkt er sich gar nichts. Dass sich das trotzdem wie ein Gespräch anfühlt, macht das Auto: Bei jeder neuen Nachricht schickt das Tool den **kompletten bisherigen Chat** noch einmal mit – eure Fragen, seine Antworten, die hochgeladenen Dateien. Das Modell liest jedes Mal alles von vorn und schreibt dann weiter.“
+Bild dazu: „Stellt euch eine Aushilfe vor, die jeden Morgen kommt und sich an nichts von gestern erinnert. Damit sie weitermachen kann, legt ihr ihr jedes Mal die ganze Akte auf den Tisch. Genau das macht das Tool – bei jeder einzelnen Nachricht.“
+Was das für euch heißt (kurz, nur ansprechen):
+- **Neuer Chat = leeres Blatt.** Was ihr in einem anderen Chat erklärt habt, weiß er dort nicht. Für ein neues Thema bewusst einen neuen Chat starten und den nötigen Kontext wieder mitgeben.
+- **Sehr lange Chats:** Irgendwann wird die Akte zu dick. Dann kürzt das Tool oder fasst ältere Teile zusammen, und Details vom Anfang gehen unter. Lieber einen neuen Chat mit kurzer Zusammenfassung beginnen.
+- **„Aber mein Tool kennt doch meinen Namen!“** Manche Tools haben eine Erinnerungs- oder Projektfunktion. Auch das ist das Auto: Es speichert Notizen und legt sie unbemerkt mit in die Akte. Der Motor selbst lernt während eures Chats nichts dazu.
+Brücke zu Block 2: „Und was mit euren Eingaben passiert – ob sie gespeichert werden, wie lange, ob sie zum Training künftiger Modelle verwendet werden dürfen – das entscheidet nicht der Motor, sondern das Auto und unser Vertrag mit dem Anbieter. Dazu gleich mehr bei den Spielregeln.“
+Maximal 2–3 Minuten. Die Fahrzeugbeispiele (Copilot, Claude Code) nur nennen, nicht erklären – es sei denn, die Gruppe ist neugierig.
 
 ---
 
@@ -146,7 +174,7 @@ Fachbegriff erklären: „Wenn eine KI etwas erfindet und das überzeugend darst
 
 **Sprechernotiz:**
 Wechsle zum Browser mit [KI-TOOL]. Die Demo-Prompts findest du in [demo_fehler_zeigen.md](07_Beispielmaterial/demo_fehler_zeigen.md). **Teste sie am Vortag mit genau dem Tool und Konto, das du im Kurs nutzt, und mach Screenshots als Backup** – die Antworten variieren von Mal zu Mal und je nach Tool.
-**Teil 1 – Wow (ca. 2 Min.):** Lass dir aus ein paar Stichworten eine höfliche Mail schreiben (z. B. „Mail an Kunden: Lieferung verschiebt sich um 1 Woche, Grund Materialengpass, wir bieten kostenlosen Expressversand an“). Dann: „Jetzt bitte etwas lockerer.“ Dann: „Und jetzt auf Englisch.“ Lass die Leute die Geschwindigkeit sehen.
+**Teil 1 – Wow (ca. 2 Min.):** Lass dir aus ein paar Stichworten eine höfliche Mail schreiben (z. B. „Mail an Kunden: Lieferung verschiebt sich um 1 Woche, Grund Materialengpass, wir bieten kostenlosen Expressversand an“). Dann: „Jetzt bitte etwas lockerer.“ Dann: „Und jetzt auf Englisch.“ Lass die Leute die Geschwindigkeit sehen. Dann kurz gegenlesen lassen: Steht noch „1 Woche“ drin – oder „etwa eine Woche“? Hat die KI etwas dazuerfunden (z. B. einen Lieferanten als Ursache)? Wie bekommt der Kunde den Expressversand – automatisch oder auf Nachfrage? Bei langen Antworten nur Betreff, Anrede und den Satz mit der Woche zeigen.
 **Teil 2 – Hoppla (ca. 3 Min.):** Nimm ein bis zwei Beispiele aus der Demo-Datei, z. B. eine Frage nach Fachliteratur mit genauen Quellenangaben, eine Zählaufgabe oder eine Frage zu [FIRMENNAME]. Frag laut in die Runde: „Klingt das überzeugend? Würdet ihr das so weitergeben?“ Dann zeigen, wo es falsch oder erfunden ist.
 Falls die KI wider Erwarten alles richtig macht: „Diesmal hat's geklappt – beim Test gestern nicht.“ und den Screenshot zeigen. Das ist sogar eine gute Botschaft: Man weiß vorher nicht, wann es schiefgeht.
 Überleitung: „Und genau deshalb brauchen wir ein paar Spielregeln.“
@@ -222,6 +250,7 @@ Teile jetzt den Spickzettel aus (ausgedruckt) – er begleitet die Leute durch a
 3. Neuen Chat starten
 4. Ersten Satz eintippen: „Hallo! Erklär mir in zwei Sätzen, was du kannst.“
 5. Klappt's? Daumen hoch 👍 – sonst Hand heben ✋
+6. Kurz anschauen: Wo wählst du das **Modell**? (⚡ schnell · ⭐ stark · 🧠 Nachdenken)
 
 *(Screenshot-Platzhalter: Startseite von [KI-TOOL] mit markiertem Eingabefeld und „Neuer Chat“. Screenshot vorab selbst machen – Menüs sehen je nach Tool und Version anders aus.)*
 
@@ -230,6 +259,7 @@ Gib allen zwei bis drei Minuten. Geh sofort herum und schau, wer hängt.
 Typische Probleme: Login funktioniert nicht, falscher Browser, Konto noch nicht freigeschaltet, VPN/WLAN. **Kein langes Troubleshooting im Kurs** – wer nicht reinkommt, arbeitet mit dem Teampartner an einem Laptop weiter. Notier dir die Namen und kläre das Problem später mit [ANSPRECHPARTNER IT].
 Wenn das WLAN oder der Login für viele ausfällt: Backup-Plan aus **Anhang A** (geteilte Logins, Beamer-Demo, Arbeit zu dritt).
 „Ihr seht: Man schreibt einfach ganz normal, wie in einem Chat. Was ihr da eintippt, nennt man übrigens **Prompt** – das ist einfach eure Anweisung oder Frage an die KI. Das Wort werdet ihr heute noch öfter hören.“
+Zum Schluss zeigst du am Beamer, wo man das Modell umschaltet (30 Sekunden, nicht mehr): „Für Texte reicht das voreingestellte Modell. Bei Zahlen, Tabellen und langen Dokumenten schaltet ihr auf [STARKES MODELL] bzw. [DENK-MODUS] – das steht auch auf dem Spickzettel und in der [Modellauswahl](05b_Modellauswahl.md).“ Gibt es bei eurer Lizenz nur ein Modell, lässt du Schritt 6 weg.
 
 ---
 
@@ -311,7 +341,7 @@ Geh die Bausteine einzeln durch:
 **Sprechernotiz:**
 „Schauen wir uns das mal live an.“ Wechsle zum Browser und gib **beide** Prompts nacheinander ein – jeweils in einem neuen Chat, damit sich die Antworten nicht beeinflussen.
 Lass die Gruppe vergleichen: „Was ist der Unterschied? Welche Mail würdet ihr eher abschicken?“
-Typische Beobachtungen beim schwachen Prompt: Die KI erfindet Details (Bestellnummer, Datum), schreibt sehr allgemein oder setzt Platzhalter wie [Name] ein. Beim starken Prompt: konkret, richtige Länge, richtiger Ton.
+Typische Beobachtungen beim schwachen Prompt: Die KI liefert eine allgemeine Vorlage mit vielen Platzhaltern wie [Bestellnummer] und stellt Rückfragen – manche Tools erfinden stattdessen Details (Bestellnummer, Datum). Lass zählen: Wie viele Lücken müsste ich noch füllen? Und achte auf Sätze ohne Klammer, die etwas behaupten (z. B. „Fotos haben wir beigefügt“). Beim starken Prompt: konkret, richtige Länge, richtiger Ton. Platzhalter für Name, Firma oder das genaue Datum sind auch hier normal – sie markieren, was nur ihr wissen könnt. Schlecht sind Platzhalter oder Erfindungen bei den eigentlichen Inhalten (Menge, Frist, Anliegen).
 „Der starke Prompt hat vielleicht 40 Sekunden länger gedauert. Dafür müsst ihr danach kaum noch nacharbeiten.“
 Wichtig: „Die Zahlen und Daten im Beispiel sind erfunden. Bei echten Lieferanten: Namen und vertrauliche Konditionen weglassen oder neutral umschreiben – ‚unser Lieferant‘ reicht der KI völlig.“
 
@@ -329,7 +359,7 @@ Wichtig: „Die Zahlen und Daten im Beispiel sind erfunden. Bei echten Lieferant
 
 **Sprechernotiz:**
 „Das Schöne an einem Chat: Ihr müsst nicht beim ersten Versuch perfekt sein. Ihr könnt einfach weiterreden wie mit einem Menschen. Innerhalb eines Chats berücksichtigt die KI, was ihr bisher geschrieben habt – in einem neuen Chat fängt sie wieder bei null an.“
-Live zeigen (1–2 Min.): Nimm die Mail aus Folie 14 und schreib „Kürzer und etwas wärmer“. Dann: „Gib mir noch eine Variante, die mit einer Frage beginnt.“
+Live zeigen (1–2 Min.): Nimm die Mail aus Folie 14 und schreib „Kürzer und etwas wärmer“. Dann: „Gib mir noch eine Variante, die mit einer Frage beginnt.“ Kurz prüfen: Ist beim Kürzen etwas weggefallen (z. B. „um eine Woche“) oder dazugekommen? In Tests hat die KI einmal „Eine weitere Verschiebung können wir nicht auffangen“ ergänzt. Mit einer Zahl dazu („höchstens 60 Wörter“) wird „kürzer“ genauer.
 „Und jetzt mein Lieblingstrick, der Joker: Wenn ihr selbst noch nicht genau wisst, was ihr braucht, schreibt einfach: ‚Ich möchte X. Stell mir zuerst bis zu 3 Fragen, bevor du loslegst.‘ Dann interviewt euch die KI – und ihr merkt oft erst dadurch, was eigentlich wichtig ist.“
 Kurzer Hinweis: „Wenn ein Chat sehr lang und durcheinander wird, lieber einen neuen Chat anfangen und das Wichtigste neu reinkopieren.“
 
@@ -393,7 +423,7 @@ Pünktlich wieder anfangen – Block 6 braucht seine Zeit.
 „Bisher haben wir mit kurzen Texten gearbeitet. Jetzt wird's richtig nützlich: lange Dokumente.“
 **Zeit im Blick:** Für die Folien 18 und 19 zusammen hast du nur ca. 5 Minuten (1:40–1:45), damit für Übung 3 rund 27 Minuten (1:45–2:12) und für die Auswertung ca. 8 Minuten (2:12–2:20) bleiben – so steht es auch im Übungsblatt.
 Live-Demo (ca. 3–4 Min.): Lade [pruefbericht_lang.md](07_Beispielmaterial/pruefbericht_lang.md) hoch (oder kopiere den Text rein) und frag: „Fasse den Bericht in 5 Stichpunkten zusammen. Nenne danach die 3 wichtigsten Risiken oder Fristen.“ Je nach Tool sieht das Upload-Symbol anders aus – zeig, wo es in eurem [KI-TOOL] ist.
-Dann eine Kontrollfrage, die zeigt, dass man prüfen muss: „Auf welcher Seite / in welchem Abschnitt steht das?“ – und im Original nachsehen. „Zusammenfassungen sind meistens gut. Aber manchmal lässt die KI etwas Wichtiges weg oder vermischt Details. Bei wichtigen Dokumenten: stichprobenartig im Original prüfen.“
+Dann eine Kontrollfrage, die zeigt, dass man prüfen muss: „Auf welcher Seite / in welchem Abschnitt steht das?“ – und im Original nachsehen. Wichtig: Eine Aussage tatsächlich im Original aufschlagen, z. B. „alle Maße in Toleranz“ gegen Abschnitt 4, Zeile Schlitzbreite (0,13 mm bei ±0,10 mm). Oder prüfen, ob die 30 % Schlusszahlung und die Schulungslücke genannt sind. Bei einer Textdatei gibt es keine Seiten: Sagt die KI das ehrlich, ist das gut. Erfindet sie Seitenzahlen, ist das der Fehler. Kommt kein Fehler, nachschieben: „Rechne jede Zeile der Messwerttabelle in Abschnitt 4 nach.“ „Zusammenfassungen sind meistens gut. Aber manchmal lässt die KI etwas Wichtiges weg oder vermischt Details. Bei wichtigen Dokumenten: stichprobenartig im Original prüfen.“
 Daten-Ampel noch einmal ganz deutlich: „Hochladen ist genau dasselbe wie Eintippen. Ein Vertrag mit Kundennamen ist rot – egal, ob ihr ihn abtippt oder als PDF hochladet.“
 
 ---
@@ -456,7 +486,7 @@ Auswertung (ca. 8 Min., 2:12–2:20): „Was hat geklappt? Habt ihr eine Antwort
 
 **Sprechernotiz:**
 „In der Einladung habe ich euch gebeten, euch eine lästige Aufgabe aus eurem Alltag zu überlegen. Jetzt ist es so weit.“
-„Wer keine Idee hat: Schaut auf die Liste auf der Folie oder ins Übungsblatt – da stehen Vorschläge. Oder fragt die KI: ‚Ich arbeite als [Tätigkeit] in einem Unternehmen der Branche [BRANCHE]. Welche meiner typischen Aufgaben könntest du mir erleichtern? Gib mir 10 Ideen.‘“
+„Wer keine Idee hat: Schaut auf die Liste auf der Folie oder ins Übungsblatt – da stehen Vorschläge. Oder fragt die KI: ‚Ich arbeite als [TÄTIGKEIT] in einem Unternehmen der Branche [BRANCHE]. Welche meiner typischen Aufgaben könntest du mir erleichtern? Gib mir 10 Ideen, die ohne vertrauliche Daten funktionieren.‘ Prüft bei jeder Idee: Welche Ampelfarbe hätten die Daten?“
 Ganz wichtig, bevor es losgeht: „Echte Aufgaben heißt oft echte Daten. Bitte schaut vorher auf die Daten-Ampel. Ersetzt Namen durch ‚Kunde A‘ oder ‚Kollegin B‘, Beträge durch Platzhalter. Die KI braucht die echten Namen fast nie, um euch zu helfen.“
 Wenn die Vorab-Umfrage ausgewertet ist: Nenne zwei, drei typische Aufgaben aus der Gruppe (anonym), um Ideen anzustoßen.
 
@@ -580,7 +610,7 @@ Bei der Beamer-Demo: Lass die Gruppe den Prompt gemeinsam mit dem Baukasten form
 
 **Was wissen wir noch?** (ca. 10 Minuten)
 
-- Sprachmodell: Autovervollständigung auf Steroiden – plausibel ≠ richtig
+- Sprachmodell: Autovervollständigung auf Steroiden – plausibel ≠ richtig, ohne Gedächtnis (Motor vs. Auto)
 - Daten-Ampel: grün · gelb · rot – im Zweifel nachfragen
 - Prompt-Baukasten: Rolle · Kontext · Aufgabe · Format · Beispiel
 - Nachsteuern und der Joker „Stell mir erst Fragen“

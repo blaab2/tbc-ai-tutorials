@@ -73,6 +73,7 @@ Hier die Kundenmail:
 - [ ] Geht die Antwort auf **alle** Punkte des Kunden ein?
 - [ ] Hat der KI-Assistent etwas **erfunden** (Termin, Gutschrift, Grund für den Verzug)?
 - [ ] Hat er etwas **zugesagt**, das du gar nicht zusagen darfst – z. B. den geforderten Nachlass oder die Korrektur der Rechnung?
+- [ ] Stimmt jede Aussage mit der Kundenmail überein – nicht übertrieben, nicht verharmlost? Hat jeder offene Punkt eine Frist?
 - [ ] Würdest du so etwas wirklich an einen Kunden schicken? Was fehlt, was ist zu viel?
 
 ### Aufgabe B – Den Ton ändern
@@ -92,7 +93,7 @@ Formuliere die Antwort wärmer und persönlicher, aber weiterhin professionell.
 Kürze die Antwort auf maximal 5 Sätze. Der Kern muss erhalten bleiben.
 ```
 
-**Beobachte:** Was ändert sich genau – Wortwahl, Satzlänge, Anrede, Grußformel? Welche Version gefällt dir am besten, und warum?
+**Beobachte:** Was ändert sich genau – Wortwahl, Satzlänge, Anrede, Grußformel? Welche Version gefällt dir am besten, und warum? Und: Ist nach dem Umformulieren eine neue Zusage dazugekommen? Prüfe kurz noch einmal mit der Checkliste aus Aufgabe A.
 
 ---
 
@@ -107,7 +108,7 @@ Angenommen, die Antwort soll zusätzlich an einen englischsprachigen Ansprechpar
 Ton: höflich, geschäftlich, britisches Englisch.
 ```
 
-Jetzt kommt die Kontrolle. Öffne dafür am besten einen **neuen Chat**, damit der KI-Assistent den deutschen Originaltext nicht „sieht“:
+Jetzt kommt die Kontrolle. Öffne dafür unbedingt einen **neuen Chat**, damit der KI-Assistent den deutschen Originaltext nicht „sieht“. Lass den alten Chat offen – du brauchst ihn gleich zum Vergleichen. Kopiere die englische Antwort (Kopier-Symbol unter der Antwort oder markieren + Strg + C) und ersetze damit die Zeile in eckigen Klammern:
 
 ```text
 Übersetze diesen englischen Text möglichst wörtlich ins Deutsche:
@@ -116,6 +117,12 @@ Jetzt kommt die Kontrolle. Öffne dafür am besten einen **neuen Chat**, damit d
 ```
 
 **Vergleiche:** Stimmt die Rückübersetzung inhaltlich mit deiner deutschen Version überein? Ist irgendwo eine Zusage, ein Datum oder eine Nuance verloren gegangen oder dazugekommen?
+
+- [ ] Auftragsnummer 4711-NT und Stückzahl gleich
+- [ ] KW-Angaben und Frist (Mittwoch) gleich
+- [ ] Rechnung RE-2024-0815 / 85 Euro noch drin
+- [ ] Platzhalter in eckigen Klammern noch da
+- [ ] keine neue Zusage (Termin, Rabatt, Gutschrift), keine verlorene Zusage
 
 > **Warum das wichtig ist:** Übersetzungen klingen oft sehr flüssig – auch dann, wenn ein Detail falsch ist. Bei wichtigen Texten (Verträge, Reklamationen, technische Angaben) gilt: lieber eine Person mit guten Sprachkenntnissen drüberschauen lassen.
 
@@ -140,13 +147,15 @@ Zeige mir zuerst die verbesserte Version und erkläre danach in
 [HIER DEINE MAIL EINFÜGEN – OHNE VERTRAULICHE DATEN]
 ```
 
-**Prüfe:** Passt das Ergebnis zu dir und deinem üblichen Schreibstil? Wenn nicht, sag es dem KI-Assistenten, z. B.: „Das klingt zu steif, so rede ich nicht. Schreib es lockerer.“
+**Prüfe:** Passt das Ergebnis zu dir und deinem üblichen Schreibstil? Steht noch alles drin, was du sagen wolltest – und nichts, was du nicht gesagt hast? Stimmen die 3 Stichpunkte mit dem Text überein? Wenn etwas nicht passt, sag es dem KI-Assistenten, z. B.: „Das klingt zu steif, so rede ich nicht. Schreib es lockerer, aber weiterhin freundlich und ohne neue Inhalte.“
 
 ---
 
 ## Stufe 3: Für Schnelle
 
 ### Aufgabe E – Drei Betreffzeilen
+
+Stell die Frage im selben Chat wie Aufgabe A. Prüfe danach: Verspricht ein Betreff etwas, das noch gar nicht in der Mail steht (z. B. „Verbindlicher Liefertermin“, solange dort nur [NEUER LIEFERTERMIN] steht)?
 
 ```text
 Schlage mir 3 kurze, sachliche Betreffzeilen für meine Antwort an den
@@ -163,15 +172,25 @@ Wie wirkt die Antwort auf dich? Was würde dich noch stören?
 Antworte in höchstens 5 Stichpunkten.
 ```
 
-Überarbeite die Antwort anschließend mit den Hinweisen, die du sinnvoll findest.
+Überarbeite die Antwort anschließend mit den Hinweisen, die du sinnvoll findest, z. B. so:
+
+```text
+Überarbeite die Antwort mit den Hinweisen [NUMMERN DER HINWEISE].
+Höchstens 150 Wörter. Mach keine neuen Zusagen (Termine, Ansprechpartner,
+Gutschriften) und liste danach auf, was ich vor dem Versand intern klären muss.
+```
+
+**Prüfe:** Steht jetzt etwas drin, das du nicht zusagen darfst? Kritik an Platzhaltern kannst du ignorieren – die füllst du ja noch aus.
 
 ### Aufgabe G – Interne Kurznachricht
 
 ```text
-Fasse den Fall für meine Kollegin aus der Logistik in 3 Sätzen zusammen:
-Was ist passiert, was haben wir dem Kunden geantwortet, was muss sie
-jetzt klären? Lockerer Ton, wir duzen uns.
+Fasse den Fall für meine Kollegin aus der Logistik in 3 kurzen Sätzen
+(höchstens 60 Wörter) zusammen: Was ist passiert, was antworten wir dem
+Kunden, was muss sie jetzt klären? Lockerer Ton, wir duzen uns.
 ```
+
+**Prüfe:** Steht in der Notiz etwas, das nicht in deinem Entwurf steht?
 
 ---
 

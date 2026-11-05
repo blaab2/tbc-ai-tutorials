@@ -39,6 +39,16 @@ Nicht neu anfangen – einfach nachsteuern:
 - „Gib mir drei unterschiedliche Varianten.“
 - „Was brauchst du noch von mir, damit es besser wird?“
 
+**Neuer Chat = leeres Blatt:** Die KI merkt sich nichts zwischen Chats. Wichtigen Kontext neu mitgeben, sehr lange Chats lieber neu beginnen.
+
+## Welches Modell wofür?
+
+- ⚡ **Schnell** ([SCHNELLES MODELL]): umformulieren, kürzen, Ton ändern, Ideen.
+- ⭐ **Stark** ([STARKES MODELL]): Kundenmails, Protokolle, lange Dokumente – alles, was rausgeht.
+- 🧠 **Nachdenken** ([DENK-MODUS]): Zahlen, Tabellen, Versionen vergleichen. Dazu: „Rechne jede Zeile nach.“
+
+Erst den Prompt verbessern, dann hochschalten – und **immer prüfen**. Details: [Modellauswahl](05b_Modellauswahl.md)
+
 ## Daten-Ampel in Kurzform
 
 - 🟢 **Grün – bedenkenlos:** öffentliche Infos, eigene Formulierungen, allgemeine Fragen, anonymisierte Texte.

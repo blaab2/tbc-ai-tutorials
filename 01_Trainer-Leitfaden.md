@@ -63,6 +63,7 @@ Druck dir diese Checkliste aus oder kopiere sie in dein Aufgaben-Tool.
 
 - [ ] **Werkzeug klären:** Welches [KI-TOOL] nutzen wir (z. B. Claude, ChatGPT oder Microsoft Copilot – je nach Firmenlizenz)? Gibt es eine **Firmenlizenz**? Für wie viele Personen?
 - [ ] **Zugänge klären mit [ANSPRECHPARTNER IT]:** Wie melden sich die Teilnehmenden an (Firmenkonto, Einladungslink oder die zentrale Firmenanmeldung, auch „Single Sign-on“ genannt)? Bis wann sind die Zugänge eingerichtet? Gibt es Einschränkungen (z. B. Datei-Upload deaktiviert, bestimmte Dateitypen gesperrt)?
+- [ ] **Modelle klären:** Welche Modelle bietet unsere Lizenz (schnell / stark / mit Nachdenken)? Welches ist voreingestellt? Gibt es Nutzungsgrenzen? Trag die Namen in die Tabelle in [05b_Modellauswahl.md](05b_Modellauswahl.md) und die Platzhalter auf dem [Spickzettel](05_Spickzettel.md) ein.
 - [ ] **Daten-Ampel abstimmen:** Die Vorlage [03_Daten-Ampel.md](03_Daten-Ampel.md) mit [ANSPRECHPARTNER IT] und [DATENSCHUTZBEAUFTRAGTE/R] durchgehen, an die Firmenregeln anpassen und **freigeben lassen**. Ohne Freigabe nicht als verbindliche Regel präsentieren.
 - [ ] Fragen an IT/Datenschutz mitnehmen: Werden Eingaben bei unserer Lizenz zum Training des Modells genutzt? Wo werden Daten verarbeitet? Wie lange werden Chats gespeichert? Dürfen private Konten dienstlich genutzt werden? Hat unser Zugang Verbindungen zu anderen Systemen (z. B. E-Mail, Laufwerke)? Gibt es eine Regel, ob KI-Texte gekennzeichnet werden müssen? Die Antworten brauchst du für Block 2 und die [FAQ](#7-faq-antworten-auf-schwierige-fragen).
 - [ ] **Termin und Raum** festlegen: [DATUM], [RAUM], 3 Stunden plus 30 Minuten Puffer für Aufbau. Alternativ zwei Termine à 90 Minuten (siehe [Abschnitt 4](#4-variante-2--90-minuten)).
@@ -90,7 +91,7 @@ Druck dir diese Checkliste aus oder kopiere sie in dein Aufgaben-Tool.
   - [Übung 2: Gute Prompts](06_Uebungen/Uebung_2_Gute_Prompts.md)
   - [Übung 3: Dokumente und Tabellen](06_Uebungen/Uebung_3_Dokumente_und_Tabellen.md) – **besonders prüfen, ob der Upload von .txt, .csv und .md funktioniert**
   - [Übung 4: Eigene Aufgabe](06_Uebungen/Uebung_4_Eigene_Aufgabe.md)
-  - Abgleichen mit den [Trainer-Lösungshinweisen](06_Uebungen/Trainer-Loesungshinweise.md)
+  - Abgleichen mit den [Trainer-Lösungshinweisen](06_Uebungen/Trainer-Loesungshinweise.md) und mit den [erwarteten Ergebnissen](06_Uebungen/Erwartete_Ergebnisse.md) aus unseren Testläufen (Protokolle in [09_Testlaeufe](09_Testlaeufe/README.md)) – so weißt du, was typischerweise herauskommt und welche Demos bei aktuellen Modellen eher *nicht* scheitern.
 - [ ] **Demo-Prompts testen** aus [demo_fehler_zeigen.md](07_Beispielmaterial/demo_fehler_zeigen.md). Wichtig: Die Ergebnisse variieren von Mal zu Mal und von Version zu Version. Notiere, welche Prompts bei *eurem* Tool gerade zuverlässig einen Fehler zeigen.
 - [ ] **Screenshots machen** von: einer gelungenen Demo, einer schiefgegangenen Demo, dem Login-Bildschirm, dem Upload-Symbol. Das ist dein Backup, falls live nichts funktioniert.
 - [ ] **Raum checken:** Beamer und Anschluss (HDMI/USB-C-Adapter), stabiles WLAN für alle Teilnehmenden gleichzeitig, **genügend Steckdosen bzw. Mehrfachsteckdosen** (Laptops laufen 3 Stunden!), Tische so stellen, dass Zweierteams nebeneinandersitzen können, Flipchart oder Whiteboard.
@@ -163,7 +164,7 @@ Die Zeiten sind relativ zum Start (0:00 = Beginn). Trag dir die echten Uhrzeiten
   - *„Wer ist eher skeptisch?“* – Und dann: *„Sehr gut, Skepsis ist heute ausdrücklich erwünscht.“*
 - Organisatorisches: Pause um ca. 1:30, Toiletten, Getränke, Handys leise.
 
-**0:04–0:09 · Was ist ein Sprachmodell?**
+**0:04–0:10 · Was ist ein Sprachmodell? (Folien 4 und 4b)**
 
 Kernbotschaften (Stichpunkte für dich):
 
@@ -171,6 +172,7 @@ Kernbotschaften (Stichpunkte für dich):
 2. Das klingt simpel, ist aber **erstaunlich fähig**: schreiben, umformulieren, übersetzen, zusammenfassen, strukturieren, Ideen liefern.
 3. Es **kann überzeugend falsch liegen.** Wenn es etwas nicht weiß, erfindet es oft eine plausibel klingende Antwort. Das nennt man **Halluzination**.
 4. Es **kennt unsere Firma nicht.** Es weiß nichts über unsere Kunden, Produkte, Preise oder internen Abläufe – außer dem, was du ihm im Chat gibst.
+5. **Modell und Tool sind zwei Dinge (Folie 4b):** Das Modell ist der Motor, [KI-TOOL] ist das Auto drumherum, mit Chatfenster, Upload, Websuche und Firmen-Einstellungen. Der Motor ist **zustandslos**: Er merkt sich zwischen zwei Nachrichten nichts. Das Tool schickt jedes Mal den ganzen Chat mit. Deshalb ist ein neuer Chat ein leeres Blatt.
 
 Formulierungsvorschläge:
 
@@ -178,20 +180,20 @@ Formulierungsvorschläge:
 - *„Die KI ‚weiß‘ nichts im menschlichen Sinn. Sie erzeugt Text, der wahrscheinlich passt. Meistens ist wahrscheinlich auch richtig. Aber eben nicht immer.“*
 - *„Ihr seid die Fachleute. Die KI ist das Werkzeug.“*
 
-**0:09–0:15 · Live-Demo: einmal beeindruckend, einmal schiefgehend**
+**0:10–0:15 · Live-Demo: einmal beeindruckend, einmal schiefgehend**
 
 *Was du zeigst* (am Beamer, Schrift groß):
 
 1. **Etwas Beeindruckendes** (ca. 2 Minuten), zum Beispiel:
    - Die [Kundenmail](07_Beispielmaterial/kundenmail_beschwerde.txt) einfügen und schreiben: *„Schreib eine freundliche, professionelle Antwort auf diese Beschwerde. Wir können bis Freitag liefern und bieten 5 % Rabatt auf die nächste Bestellung an.“*
-   - Dann: *„Und jetzt das Ganze auf Englisch.“* – Zeigt: Die KI merkt sich, was vorher im Chat stand, und Nachsteuern ist ganz einfach.
+   - Dann: *„Und jetzt das Ganze auf Englisch.“* – Zeigt: Nachsteuern ist ganz einfach, und die KI berücksichtigt, was vorher im Chat stand – weil das Tool den Verlauf mitschickt (Folie 4b).
    - Alternativen: die Stichwort-Mail aus Folie 6 (Demo 7, Variante C) oder die Zusammenfassung der Kundenmail (Demo 7, Grundvariante) in [demo_fehler_zeigen.md](07_Beispielmaterial/demo_fehler_zeigen.md). Nimm die Variante, die bei deinem Test am besten funktioniert hat.
 2. **Etwas, das schiefgeht** (ca. 2 Minuten): Einen der vorher getesteten Prompts aus [demo_fehler_zeigen.md](07_Beispielmaterial/demo_fehler_zeigen.md) verwenden, z. B.:
-   - nach Firmenwissen fragen (Demo 3; z. B. *„Wer ist der Geschäftsführer der Nordlicht Technik GmbH und welche Produkte hat sie?“* – die Firma ist fiktiv, die KI erfindet vielleicht trotzdem etwas),
+   - nach Firmenwissen fragen (Demo 3; z. B. *„Wer ist der Geschäftsführer der Nordlicht Technik GmbH und welche Produkte hat sie?“* – die Firma ist fiktiv; aktuelle Modelle sagen hier oft ehrlich „weiß ich nicht“. Dann direkt die Lehre „Kontext mitliefern“ ziehen oder den Hauptprompt mit [FIRMENNAME] zeigen),
    - nach Quellen mit genauen Fundstellen fragen (Demo 1),
    - Buchstaben zählen oder eine längere Rechnung lösen lassen (Demo 4),
    - nach sehr aktuellen Ereignissen fragen (Demo 2).
-3. **Auflösen** (ca. 2 Minuten): *„Was ist hier passiert? Die Antwort klang genauso selbstsicher wie die erste. Genau deshalb prüfen wir. Das schauen wir uns gleich bei den Spielregeln genauer an.“*
+3. **Auflösen** (ca. 1 Minute): *„Was ist hier passiert? Die Antwort klang genauso selbstsicher wie die erste. Genau deshalb prüfen wir. Das schauen wir uns gleich bei den Spielregeln genauer an.“*
 
 > **Wichtig:** Die KI antwortet nicht jedes Mal gleich. Es kann sein, dass sie den „Fehler-Prompt“ live plötzlich richtig beantwortet. Dann sagst du: *„Interessant – heute hat sie Glück gehabt. Letzte Woche kam das hier raus:“* und zeigst den Screenshot. Auch das ist eine Lektion: Man kann sich nicht darauf verlassen, dass eine Antwort beim nächsten Mal gleich ausfällt.
 
@@ -332,7 +334,7 @@ Dazu kommt – kein eigener Baustein, aber genauso wichtig – das **Nachsteuern
 
 **Alternative für die Live-Demo** – wenn deine Gruppe viel mit Besprechungen zu tun hat, nimm stattdessen die [Besprechungsnotizen](07_Beispielmaterial/notizen_besprechung.txt):
 
-> ❌ **Schwacher Prompt:** *„Schreib ein Protokoll.“*
+> ❌ **Schwacher Prompt:** *„Schreib ein Protokoll.“* (ohne Notizen eingeben)
 >
 > ✅ **Starker Prompt:** *„Du bist Assistenz der Teamleitung. Unten stehen meine ungeordneten Notizen aus der Teambesprechung von heute. Mach daraus ein kurzes Ergebnisprotokoll für das Team. Format: 1. Beschlüsse als Stichpunkte, 2. eine Tabelle mit den Spalten Aufgabe | Verantwortlich | Termin, 3. offene Fragen. Erfinde nichts dazu – wenn ein Verantwortlicher oder Termin fehlt, schreib ‚offen‘. [Notizen einfügen]“*
 
@@ -680,6 +682,8 @@ Alle Dateien liegen im Tutorial-Ordner. Übersicht und Index: [README.md](README
 | [04_Folien.md](04_Folien.md) | Folieninhalte Folie für Folie mit Sprechernotizen | Vorbereitung (in Präsentationsprogramm übertragen) + am Tag |
 | [06_Uebungen/Trainer-Loesungshinweise.md](06_Uebungen/Trainer-Loesungshinweise.md) | Musterlösungen, Beispielprompts, typische Stolpersteine zu allen Übungen | Vorbereitung + beim Herumgehen |
 | [07_Beispielmaterial/demo_fehler_zeigen.md](07_Beispielmaterial/demo_fehler_zeigen.md) | Demo-Prompts für typische KI-Schwächen (vorher testen, Screenshots als Backup) | Block 1 |
+| [06_Uebungen/Erwartete_Ergebnisse.md](06_Uebungen/Erwartete_Ergebnisse.md) | Was die KI bei jeder Übung und Demo im Test tatsächlich geliefert hat, typische Fehler, Unterschiede zwischen Modellen | Vorbereitung + beim Herumgehen |
+| [09_Testlaeufe/README.md](09_Testlaeufe/README.md) | Index aller Testlauf-Protokolle (jede Aufgabe mit drei Modellen) | Vorbereitung |
 
 ### Vorher verschicken
 
